@@ -73,8 +73,10 @@ public class Reptile {
             province.setCities(cities);
             return province;
         }).collect(Collectors.toList());
+        String jsonString = new ObjectMapper().writeValueAsString(provinces);
+        System.out.println(jsonString);
         Path file = Files.createFile(Paths.get("province.json"));
-        Files.write(file, new ObjectMapper().writeValueAsString(provinces).getBytes(StandardCharsets.UTF_8));
+        Files.write(file, jsonString.getBytes(StandardCharsets.UTF_8));
     }
 
     /**

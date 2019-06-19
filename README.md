@@ -3,7 +3,8 @@
 
 
 ## Run
-直接运行`Reptile`类即可
+* 直接运行[`Reptile`](/src/main/java/com/example/reptile/Reptile.java)类即可
+* 结果输出到 控制台 和 根目录下的  `province.json` 文件中
 
 ## 说明
 只抓取了城市级的数据，县级数据可更改源码来获取
